@@ -1,3 +1,8 @@
+from dotenv import load_dotenv, find_dotenv
+import os
+
+_ = load_dotenv(find_dotenv())
+
 
 
 train_file_name : str = "train.csv"
@@ -10,7 +15,7 @@ database_name : str = "twitter"
 
 collection_name : str = "tweets"
 
-mongo_url :str = "mongodb+srv://syamsundar:syam@cluster0.tai4x.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+mongo_url :str = os.environ['mongo_url']
     
 
 artifact_dir_name : str = "artifact"
