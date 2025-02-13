@@ -1,2 +1,9 @@
 pycaret
+nltk
+pandas
+numpy
+dill
+seaborn
+matlplotlib
+scikit-learn
 -e .
